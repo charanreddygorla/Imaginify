@@ -1,8 +1,12 @@
 import React from "react";
-import Auth from "./components/Auth";
+import BackgroundRemover from "./components/BackgroundRemover";
 
 function App() {
-  return <Auth />;
+  return (
+    <div className="App">
+      <BackgroundRemover />
+    </div>
+  );
 }
 
 export default App;

@@ -3,7 +3,11 @@ import React from 'react'
 const Layout = ({children}: {children: React.ReactNode}) => {
   return (
     <main className='root'>
-        {children}
+        <div className="root-Container">
+          <div className="wrapper">
+            {children}
+          </div>
+        </div>
     </main>
   )
 }

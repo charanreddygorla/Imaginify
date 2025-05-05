@@ -6,4 +6,4 @@ const AddTransformationTypePage = () => {
   )
 }
 
-export default AddTransformationTypePage
+export default AddTransformationTypePage 

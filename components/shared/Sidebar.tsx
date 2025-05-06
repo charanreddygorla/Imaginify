@@ -21,9 +21,12 @@ const Sidebar = () => {
           <SignedIn>
             <ul className="sidebar-nav_elements">
               {navLinks.slice(0, 6).map((link) => {
-                const isActive = link.route === pathname;
+                const isActive = link.route === pathname
+
                 return (
-                  <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'}`}>
+                  <li key={link.route} className={`sidebar-nav_element group ${
+                    isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                  }`}>
                     <Link className="sidebar-link" href={link.route}>
                       <Image 
                         src={link.icon}
@@ -35,15 +38,19 @@ const Sidebar = () => {
                       {link.label}
                     </Link>
                   </li>
-                );
+                )
               })}
-            </ul>
+              </ul>
+
 
             <ul className="sidebar-nav_elements">
               {navLinks.slice(6).map((link) => {
-                const isActive = link.route === pathname;
+                const isActive = link.route === pathname
+
                 return (
-                  <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'}`}>
+                  <li key={link.route} className={`sidebar-nav_element group ${
+                    isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                  }`}>
                     <Link className="sidebar-link" href={link.route}>
                       <Image 
                         src={link.icon}
@@ -55,11 +62,9 @@ const Sidebar = () => {
                       {link.label}
                     </Link>
                   </li>
-                );
+                )
               })}
-            </ul>
 
-            <ul className='sidebar-nav_elements'>
               <li className="flex-center cursor-pointer gap-2 p-4">
                 <UserButton afterSignOutUrl='/' showName />
               </li>
@@ -74,7 +79,7 @@ const Sidebar = () => {
         </nav>
       </div>
     </aside>
-  );
+  )
 }
 
-export default Sidebar;
+export default Sidebar
